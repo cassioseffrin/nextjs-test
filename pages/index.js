@@ -2,8 +2,8 @@ function Home(props) {
     const repos = props.repos;
     return (<>
         <h2>Meus repositorios</h2>
-        {repos.array.forEach(r => {
-            <p>{r.name}</p>
+        {repos.map(r => {
+            return (<p>{r.name}</p>);
         })}
     </>);
 }
